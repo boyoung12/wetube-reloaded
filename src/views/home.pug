@@ -1,0 +1,9 @@
+extends base.pug
+include mixins/video
+
+block content
+    h2 Welcome here you will see the tranding video
+    each banana in videos
+        +video(banana)
+    else
+        li sorry nothing found 
